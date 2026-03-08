@@ -15,7 +15,8 @@ logo.style.width = "120px";
 logo.style.height = "100%";
 logo.style.float = "left";
 // logo.style.backgroundColor = "black";
-logo.setAttribute("src", "./../src/media/img/images (3).png");
+let logoSrc = "./../media/images (3).png";
+logo.setAttribute("src", logoSrc);
 
 const ul = document.createElement("ul");
 nav.appendChild(ul);
@@ -74,7 +75,8 @@ hbaDiv.style.borderRadius = "50%";
 
 const headBodyImg = document.createElement("img");
 hbaDiv.appendChild(headBodyImg);
-headBodyImg.setAttribute("src", "./../src/media/img/IMG-20260307-WA0000.jpg");
+let headBodyImgSrc = "./../media/IMG-20260307-WA0000.jpg";
+headBodyImg.setAttribute("src", headBodyImgSrc);
 headBodyImg.style.position = "absolute";
 headBodyImg.style.top = "-25px";
 headBodyImg.style.left = "-130px";
