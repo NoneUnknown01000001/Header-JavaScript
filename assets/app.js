@@ -3,6 +3,7 @@ document.body.appendChild(header);
 header.style.width = "100%";
 header.style.height = "100vh";
 header.style.position = "relative";
+header.style.textTransform = "capitalize";
 
 const nav = document.createElement("nav");
 header.appendChild(nav);
@@ -27,33 +28,19 @@ ul.style.display = "grid";
 ul.style.gridTemplateRows = "auto";
 ul.style.gridTemplateColumns = "auto auto auto auto auto";
 
-const shop = document.createElement("li");
-shop.textContent = "shop";
-ul.appendChild(shop);
+let navItems = ["shop", "about", "look book", "visit us", "contact us"];
 
-const about = document.createElement("li");
-about.textContent = "about";
-ul.appendChild(about);
-
-const lookBook = document.createElement("li");
-lookBook.textContent = "look book";
-ul.appendChild(lookBook);
-
-const visitUs = document.createElement("li");
-visitUs.textContent = "visit us";
-ul.appendChild(visitUs);
-
-const contactUs = document.createElement("li");
-contactUs.textContent = "contact us";
-ul.appendChild(contactUs);
-
-for (let i = 0; i < 5; i++) {
-  let liStyle = document.querySelectorAll("li")[i];
-  liStyle.style.textAlign = "center";
-  liStyle.style.lineHeight = "60px";
-  liStyle.style.fontSize = "20px";
-  liStyle.style.cursor = "pointer";
-}
+navItems.forEach((i) => {
+  const li = document.createElement("li");
+  const a = document.createElement("a");
+  a.textContent = i;
+  a.style.textAlign = "center";
+  a.style.lineHeight = "60px";
+  a.style.fontSize = "20px";
+  a.style.cursor = "pointer";
+  li.appendChild(a);
+  ul.appendChild(li);
+});
 
 const headBody = document.createElement("article");
 header.appendChild(headBody);
@@ -111,3 +98,5 @@ headBodyBtn.style.backgroundColor = "black";
 headBodyBtn.style.color = "white";
 headBodyBtn.style.transform = "translateX(-50%)";
 headBodyBtn.style.width = "120px";
+headBodyBtn.style.textTransform = "capitalize";
+headBodyBtn.style.boxSizing = "content-box";
