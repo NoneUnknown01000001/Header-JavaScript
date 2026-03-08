@@ -14,8 +14,7 @@ nav.appendChild(logo);
 logo.style.width = "120px";
 logo.style.height = "100%";
 logo.style.float = "left";
-// logo.style.backgroundColor = "black";
-let logoSrc = "./../media/images (3).png";
+let logoSrc = "./assets/media/images (3).png";
 logo.setAttribute("src", logoSrc);
 
 const ul = document.createElement("ul");
@@ -75,7 +74,7 @@ hbaDiv.style.borderRadius = "50%";
 
 const headBodyImg = document.createElement("img");
 hbaDiv.appendChild(headBodyImg);
-let headBodyImgSrc = "./../media/IMG-20260307-WA0000.jpg";
+let headBodyImgSrc = "./assets/media/IMG-20260307-WA0000.jpg";
 headBodyImg.setAttribute("src", headBodyImgSrc);
 headBodyImg.style.position = "absolute";
 headBodyImg.style.top = "-25px";
